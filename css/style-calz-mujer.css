@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+
+body{
+    text-align: center;
+}
+
+
+.content-principal{
+height: 2000px;
+width: 1500px;
+margin: 0 auto;
+display: grid;
+display: repeat(9,11.11%) / repeat(4,25%);
+grid-template-areas: 
+"head head head head"
+"nav nav nav nav"
+"cont1 cont1 cont1 cont1"
+"cont1 cont1 cont1 cont1"
+"cont1 cont1 cont1 cont1"
+"cont1 cont1 cont1 cont1"
+"cont1 cont1 cont1 cont1"
+"cont1 cont1 cont1 cont1"
+"footer footer footer footer";
+
+}
+
+header{
+    background:rosybrown;
+    grid-area: head;
+}
+
+
+nav{
+    background:violet;
+    grid-area: nav;
+
+}
+#contenido1{
+    background:rgb(255, 255, 255);
+    grid-area: cont1;
+}
+#contenido2{
+    background:rgb(255, 255, 255);
+    grid-area: cont2;
+}
+
+footer{
+    background:royalblue;
+    grid-area: footer;
+    
+}
+
